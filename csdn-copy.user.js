@@ -7,8 +7,8 @@
 // @require       https://code.jquery.com/jquery-3.1.1.min.js
 // @include      *://*.csdn.net/*
 // @icon         https://s3-hc-dgg.hics.huawei.com/sam-pro/2021/8/lWX899464/1629454439031-456.png
-// @downloadURL  https://gist.github.com/ZechengSun/07f6a2a5190ffe84a75c09b58461319e/raw/15bfb915a620a1d6acdd228486c816433195a007/csdn-copy.user.js
-// @updateURL    https://gist.github.com/ZechengSun/07f6a2a5190ffe84a75c09b58461319e/raw/15bfb915a620a1d6acdd228486c816433195a007/csdn-copy.user.js
+// @downloadURL  https://github.com/ZechengSun/tampermonkey/raw/main/csdn-copy.user.js
+// @updateURL    https://github.com/ZechengSun/tampermonkey/raw/main/csdn-copy.user.js
 // @grant        none
 // ==/UserScript==
 

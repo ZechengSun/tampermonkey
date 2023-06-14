@@ -14,7 +14,9 @@
 (function() {
     'use strict';
     setInterval(function(){
-        var scoreUp = document.getElementsByClassName("score-up")[0].children[0];
-        scoreUp.click();
+        var scoreUp = document.getElementsByClassName("score-up");
+        if(scoreUp){
+            scoreUp[0].children[0].click();
+        }
      },1000) ;
 })();

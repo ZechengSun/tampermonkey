@@ -15,7 +15,7 @@
     'use strict';
     setInterval(function(){
         var scoreUp = document.getElementsByClassName("score-up");
-        if(scoreUp){
+        if(scoreUp!=undefined ){
             scoreUp[0].children[0].click();
         }
      },1000) ;

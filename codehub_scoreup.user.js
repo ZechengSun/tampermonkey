@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         codehub自动评1分
 // @namespace    http://tampermonkey.net/
-// @version      1.0.0
+// @version      1.0.1
 // @description  codehub自动评1分
 // @author       孙泽程
 // @include      *://codehub-g.huawei.com/*

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         CSDN免登录复制+可选择复制+净化剪切板+阅读全文
 // @namespace    http://tampermonkey.net/
-// @version      2.0.9
+// @version      2.0.10
 // @description  CSDN免登录复制+可选择复制+净化剪切板+阅读全文，创作不易，打赏随意，支付宝13750421396。
 // @author       孙泽程
 // @require       https://code.jquery.com/jquery-3.1.1.min.js
@@ -23,16 +23,6 @@
     $(".hljs-button").attr("data-title", "全部复制");
     $(".hljs-button").attr("onclick", "hljs.copyCode(event);setTimeout(function(){$('.hljs-button').attr('data-title', '全部复制');},3000);");
     $("code").attr("onclick", "mdcp.copyCode(event);setTimeout(function(){$('.hljs-button').attr('data-title', '全部复制');},3000);");
-
-    // 复制时保留原文格式，参考 https://greasyfork.org/en/scripts/390502-csdnremovecopyright/code
-    //try {
-    //    Object.defineProperty(window, "articleType", {
-    //        value: 0,
-    //        writable: false,
-    //        configurable: false
-    //     });
-    //} catch (err) {
-    //}
 
     // 去除剪贴板劫持
     csdn.copyright.init("", "", "");

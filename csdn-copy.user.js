@@ -44,4 +44,7 @@
      // 内容区开启复制
     const content_views = document.querySelector("#content_views");
     content_views.replaceWith(content_views.cloneNode(true));
+    
+    //去除登陆弹窗
+    $(".passport-login-container").css("display", "none");
 })();

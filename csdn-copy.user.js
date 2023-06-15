@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         CSDN免登录复制+可选择复制+净化剪切板+阅读全文
 // @namespace    http://tampermonkey.net/
-// @version      2.0.11
+// @version      2.1.3
 // @description  CSDN免登录复制+可选择复制+净化剪切板+阅读全文，创作不易，打赏随意，支付宝13750421396。
 // @author       孙泽程
 // @require       https://code.jquery.com/jquery-3.1.1.min.js

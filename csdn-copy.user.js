@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         CSDN免登录复制+可选择复制+净化剪切板+阅读全文
 // @namespace    http://tampermonkey.net/
-// @version      2.0.10
+// @version      2.0.11
 // @description  CSDN免登录复制+可选择复制+净化剪切板+阅读全文，创作不易，打赏随意，支付宝13750421396。
 // @author       孙泽程
 // @require       https://code.jquery.com/jquery-3.1.1.min.js
@@ -14,15 +14,13 @@
 
 (function() {
     'use strict';
-    //代码域可选
-    $("code").css("user-select", "text");
+
+    //去除登陆弹窗
+    $(".passport-login-container").css("display", "none");
 
     // 免登录复制
-    $(".hljs-button").removeClass("signin");
-    $(".hljs-button").addClass("{2}");
     $(".hljs-button").attr("data-title", "全部复制");
     $(".hljs-button").attr("onclick", "hljs.copyCode(event);setTimeout(function(){$('.hljs-button').attr('data-title', '全部复制');},3000);");
-    $("code").attr("onclick", "mdcp.copyCode(event);setTimeout(function(){$('.hljs-button').attr('data-title', '全部复制');},3000);");
 
     // 去除剪贴板劫持
     csdn.copyright.init("", "", "");
@@ -34,7 +32,4 @@
      // 内容区开启复制
     const content_views = document.querySelector("#content_views");
     content_views.replaceWith(content_views.cloneNode(true));
-    
-    //去除登陆弹窗
-    $(".passport-login-container").css("display", "none");
 })();

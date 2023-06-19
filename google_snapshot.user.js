@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         谷歌搜索自动快照
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  try to take over the world!
 // @author       孙泽程
 // @match        *://www.google.com.hk/search?q=*
@@ -32,7 +32,8 @@
         let aTags = document.getElementsByTagName('a');
         for (var i = index; i < aTags.length; i++) {
             let a=aTags[i];
-            if (a.getAttribute("jscontroller")&& a.getAttribute("href").indexOf("https://translate.google.com/translate?")=-1) {
+
+            if (a.getAttribute("jscontroller")&&a.childNodes[0].textContent != "翻译此页") {
                 let oldUrl = a.getAttribute("href");
                 let newUrl=googleusercontent+encodeURIComponent(oldUrl);
 

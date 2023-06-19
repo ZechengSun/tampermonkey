@@ -32,7 +32,7 @@
         let aTags = document.getElementsByTagName('a');
         for (var i = index; i < aTags.length; i++) {
             let a=aTags[i];
-            if (a.getAttribute("jscontroller")) {
+            if (a.getAttribute("jscontroller")&& a.getAttribute("href").indexof("https://translate.google.com/translate?")=-1) {
                 let oldUrl = a.getAttribute("href");
                 let newUrl=googleusercontent+encodeURIComponent(oldUrl);
 

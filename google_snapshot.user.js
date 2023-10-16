@@ -27,13 +27,11 @@
     }
     `);
     var googleusercontent = "https://webcache.googleusercontent.com/search?q=cache:"
-    var index=0;
     setInterval(function(){
         let aTags = document.getElementsByTagName('a');
-        for (var i = index; i < aTags.length; i++) {
+        for (var i = 0; i < aTags.length; i++) {
             let a=aTags[i];
-
-            if (a.getAttribute("jscontroller")&&a.childNodes[0].textContent != "翻译此页") {
+            if (a.getAttribute("jscontroller")&&a.getAttribute("aaa")!=1&&a.childNodes[0].textContent != "翻译此页") {
                 let oldUrl = a.getAttribute("href");
                 let newUrl=googleusercontent+encodeURIComponent(oldUrl);
 
@@ -46,8 +44,8 @@
 
                 var parent = a.parentNode;
                 parent.insertBefore(btn, a.nextSibling);
+                a.setAttribute("aaa","1");
             };
         }
-        index=aTags.length;
-    },1000) ;
+    },500) ;
 })();

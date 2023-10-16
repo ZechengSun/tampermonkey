@@ -31,7 +31,7 @@
         let aTags = document.getElementsByTagName('a');
         for (var i = 0; i < aTags.length; i++) {
             let a=aTags[i];
-            if (a.getAttribute("jscontroller")&&a.getAttribute("aaa")!=1&&a.childNodes[0].textContent != "翻译此页") {
+            if (a.getAttribute("jscontroller")=="M9mgyc"&&a.getAttribute("aaa")!=1&&a.childNodes[0].textContent != "翻译此页"&&a.classList.length==0) {
                 let oldUrl = a.getAttribute("href");
                 let newUrl=googleusercontent+encodeURIComponent(oldUrl);
 

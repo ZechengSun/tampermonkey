@@ -1,9 +1,10 @@
 // ==UserScript==
 // @name         谷歌搜索自动快照
 // @namespace    http://tampermonkey.net/
-// @version      0.21
+// @version      0.22
 // @description  try to take over the world!
 // @author       孙泽程
+// @match        *://www.google.com/search?*
 // @match        *://www.google.com.hk/search?*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=google.com.hk
 // @grant        GM_addStyle

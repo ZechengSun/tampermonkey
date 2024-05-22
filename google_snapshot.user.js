@@ -7,6 +7,8 @@
 // @match        *://www.google.com/search?*
 // @match        *://www.google.com.hk/search?*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=google.com.hk
+// @downloadURL  https://github.com/ZechengSun/tampermonkey/raw/main/google_snapshot.user.js
+// @updateURL    https://github.com/ZechengSun/tampermonkey/raw/main/google_snapshot.user.js
 // @grant        GM_addStyle
 // ==/UserScript==
 

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         谷歌搜索自动快照
 // @namespace    http://tampermonkey.net/
-// @version      0.3
+// @version      1.0
 // @description  在谷歌搜索结果中自动添加网页快照按钮
 // @author       孙泽程
 // @match        *://www.google.com/search?*

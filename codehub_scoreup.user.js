@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         codehub自动评1分
 // @namespace    http://tampermonkey.net/
-// @version      2.0
+// @version      2.1
 // @description  codehub自动评1分
 // @author       孙泽程
 // @include      *://codehub-g.huawei.com/*
@@ -13,11 +13,11 @@
 
 (function () {
     'use strict';
-    const scoreUp = document.querySelector('.score-up');
-
+   
     // 点击评分按钮的函数
     function clickScoreButton() {
-        if (scoreUp && !scoreUp.children[0].classList.contains('score-selected')) {
+        const scoreUp = document.querySelector('.score-up');
+        if (scoreUp.length > 0 && !scoreUp.children[0].classList.contains('score-selected')) {
             scoreUp.click();
         }
     }

@@ -16,9 +16,9 @@
    
     // 点击评分按钮的函数
     function clickScoreButton() {
-        const scoreUp = document.querySelector('.score-up');
-        if (scoreUp.length > 0 && !scoreUp.children[0].classList.contains('score-selected')) {
-            scoreUp.click();
+        const scoreUp = document.getElementsByClassName("score-up");
+        if (scoreUp.length > 0 && scoreUp[0].children.length > 0 && !scoreUp[0].children[0].classList.contains('score-selected')) {
+            scoreUp[0].click();
         }
     }
 

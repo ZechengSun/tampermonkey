@@ -25,8 +25,9 @@
     }
 
     // 使用 MutationObserver 监控 DOM 变化
-    const observer = new MutationObserver(clickScoreButton);
+    setTimeout(() => {
+  const observer = new MutationObserver(clickScoreButton);
     observer.observe(document.body, observerConfig);
+}, 3000);
 
-    clickScoreButton();
 })();
